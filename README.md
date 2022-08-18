@@ -17,5 +17,9 @@ Python
 3. Provide inputs to the script and execute it.
 
 
-https://user-images.githubusercontent.com/74459400/185375695-2440ff78-3599-41de-ab29-a72175e39d1d.mp4
+
+
+https://user-images.githubusercontent.com/74459400/185376584-2f4ad277-85ac-42ee-a009-c3acbd99f2da.mp4
+
+
 
