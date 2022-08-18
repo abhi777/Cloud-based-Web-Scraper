@@ -18,7 +18,8 @@ requirements.txt
 3. Run the Python Script using terminal or cmd.                         
 4. Provide inputs to the script and execute it.
 
-
+                                                    
+# Screenshots
 
 ![1](https://user-images.githubusercontent.com/74459400/185405055-bb0f6777-e53c-418b-aea0-1ec08b5405aa.png)
 
@@ -33,7 +34,7 @@ requirements.txt
 
 
 
-# Working Prototype
+# Working               
 
 https://user-images.githubusercontent.com/74459400/185376584-2f4ad277-85ac-42ee-a009-c3acbd99f2da.mp4
 
