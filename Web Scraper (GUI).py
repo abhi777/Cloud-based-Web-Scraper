@@ -6,7 +6,7 @@ import os
 import whois
 
 
-# funct that calls other functions and GUI Shit
+# funct that calls other functions and GUI
 def auto():
     try:
 
@@ -156,8 +156,8 @@ def text_data():
     for i in tags:
 
         for element in soup.select(i):
-                                                                                                # https://pdfdrive.com
-            txt = element.text + "\n"                                                           # C:\Users\abhig\Desktop\test dat
+                                                                                             
+            txt = element.text + "\n"                                                          
             print(element.text)
             text_file.write(txt)
 
