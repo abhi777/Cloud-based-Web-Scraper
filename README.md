@@ -8,7 +8,8 @@ Executing the script after providing the inputs would start saving the required 
 # Requirements
 
 Windows OS             
-Python                
+Python                   
+Dependencies in requirements.txt
 
 # Usage    
 
