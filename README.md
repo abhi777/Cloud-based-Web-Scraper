@@ -1,4 +1,4 @@
-# Description
+# GUI based Web Scraper v1.0.23
 
 This is a Web Scraping Tool developed using Python to scrap Data from the web and it's also very convenient to use,even for a Non-Technical Person as it provides a GUI.         
 
