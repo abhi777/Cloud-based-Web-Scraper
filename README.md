@@ -15,3 +15,7 @@ Python
 1. Download the Repo and install requirements.txt by ececuting "pip install -r requirements.txt" in cmd or in the terminal of your editor.                          
 2. Run the Python Script using terminal or cmd.                         
 3. Provide inputs to the script and execute it.
+
+
+https://user-images.githubusercontent.com/74459400/185375695-2440ff78-3599-41de-ab29-a72175e39d1d.mp4
+
