@@ -9,7 +9,7 @@ Executing the script after providing the inputs would start saving the required 
 
 Windows OS             
 Python                   
-Dependencies in requirements.txt
+requirements.txt
 
 # Usage    
 
