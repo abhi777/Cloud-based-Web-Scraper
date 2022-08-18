@@ -1,0 +1,6 @@
+PySimpleGUI
+re
+requests
+bs4
+whois
+os
