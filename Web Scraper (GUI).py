@@ -40,18 +40,11 @@ def auto():
         progress_bar = window.FindElement('progress')
 
         event, values = window.read()
-        print(values)
+
         file1 = open(rf"{str(values[0])}", "r")  # opening the input text file
         filelist = file1.readlines()  # reading the text file
-        print(filelist)
-        no = len(filelist)
-        print(no)
 
-        def prog(x):
-            val = [(x / no) * 100]
-            progress_bar.UpdateBar(val, 100)
-            # adding time.sleep(length in Seconds) has been used to Simulate adding your script in between Bar Updates
-            time.sleep(.5)
+        no = len(filelist)
 
         x = 0
         for k in filelist:  # looping the url's
@@ -100,11 +93,9 @@ def auto():
                     pass
 
             x = x + 1
-            prog(x)
-
-
-
-
+            progress_bar.UpdateBar(x, no)
+            # updating the progress bar
+            time.sleep(.5)
 
         closing_window()  # closing window func
         window.close()
