@@ -35,6 +35,8 @@ requirements.txt
 
 ![5](https://user-images.githubusercontent.com/74459400/185405226-877b24a4-3ee6-4da9-8ac6-31d90d3fecd3.png)
 
+![Screenshot 2022-09-21 140246](https://user-images.githubusercontent.com/74459400/191458793-3240a8e4-4890-4f31-959a-4fcc174f0458.png)
+
 
 
 
