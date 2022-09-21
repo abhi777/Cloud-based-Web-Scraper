@@ -18,6 +18,10 @@ requirements.txt
 3. Run the Python Script using terminal or cmd.                         
 4. Provide inputs to the script and execute it.
 
+# Updates
+
+1. A Progress Bar to show the current status of the application.
+2. Improved Performance and Bug fixes.
                                                     
 # Screenshots
 
