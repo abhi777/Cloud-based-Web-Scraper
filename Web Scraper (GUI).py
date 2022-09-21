@@ -4,6 +4,7 @@ import requests
 from bs4 import BeautifulSoup
 import os
 import whois
+import time
 
 
 # funct that calls other functions and GUI
@@ -20,7 +21,7 @@ def auto():
         layout = [
             [sg.Text('Please,Enter the path of Text File & path of the Directory')],
             [sg.Text("Source File ", size=(15, 1)), sg.Input(), sg.FileBrowse()],
-            [sg.Text("Destination Folder ",size=(15, 1)), sg.Input(), sg.FolderBrowse()],
+            [sg.Text("Destination Folder ", size=(15, 1)), sg.Input(), sg.FolderBrowse()],
 
             [sg.Text("                             "), sg.Checkbox('Links ', default=False, key="-IN-")],
             [sg.Text("                             "), sg.Checkbox('Text Data ', default=False, key="-IN1-")],
@@ -28,61 +29,84 @@ def auto():
             [sg.Text("                             "), sg.Checkbox('Scripts & CSS ', default=False, key="-IN3-")],
             [sg.Text("                             "), sg.Checkbox('DNS Information', default=False, key="-IN4-")],
             [sg.Text("      ")],
-            [sg.Text("                                                               "),sg.Submit(size=(15,1)), sg.Cancel(size=(15,1))],
+            [sg.Text("                            "), sg.Submit(size=(15, 1)),
+             sg.Cancel(size=(15, 1))],
+            [sg.Text("      ")],
+            [sg.Text('Progress : ')],
+            [sg.ProgressBar(1, orientation='h', size=(40, 30), key='progress', bar_color=['Green'])],
             [sg.Text("      ")]
         ]
-        window = sg.Window('Web Scraper', layout)
+        window = sg.Window('Web Scraper', layout).finalize()
+        progress_bar = window.FindElement('progress')
+
         event, values = window.read()
         print(values)
-        file1 = open(rf"{str(values[0])}", "r") # opening the input text file
-        filelist = file1.readlines()            # reading the text file
-        for k in filelist:                      # looping the url's
-            ur = (k[:-1])                       # removing \n from the end
+        file1 = open(rf"{str(values[0])}", "r")  # opening the input text file
+        filelist = file1.readlines()  # reading the text file
+        print(filelist)
+        no = len(filelist)
+        print(no)
 
-            global url                          # globalizing the url
+        def prog(x):
+            val = [(x / no) * 100]
+            progress_bar.UpdateBar(val, 100)
+            # adding time.sleep(length in Seconds) has been used to Simulate adding your script in between Bar Updates
+            time.sleep(.5)
+
+        x = 0
+        for k in filelist:  # looping the url's
+            ur = (k[:-1])  # removing \n from the end
+
+            global url  # globalizing the url
             url = 'https://' + ur
             print(url)
             path = values[1]
 
-
-            fol_name = k[:-1]                  # using the url to define folder name and path
+            fol_name = k[:-1]  # using the url to define folder name and path
             path2 = path + r'\'' + fol_name
             path_clean = path2.replace(r'\'', '\\')
             os.mkdir(path_clean)
             global true_path
             true_path = path_clean
 
-
-            if values["-IN-"]==True:           # checkbox functions
+            if values["-IN-"] == True:  # checkbox functions
                 try:
                     links()
                 except:
                     pass
 
-            if values["-IN1-"]==True:
+            if values["-IN1-"] == True:
                 try:
                     text_data()
                 except:
                     pass
 
-            if values["-IN2-"]==True:
+            if values["-IN2-"] == True:
                 try:
                     img_data()
                 except:
                     pass
 
-            if values["-IN3-"]==True:
+            if values["-IN3-"] == True:
                 try:
                     cssjs()
                 except:
                     pass
 
-            if values["-IN4-"]==True:
+            if values["-IN4-"] == True:
                 try:
                     dnsinfo()
                 except:
                     pass
-        closing_window()                    # closing window func
+
+            x = x + 1
+            prog(x)
+
+
+
+
+
+        closing_window()  # closing window func
         window.close()
 
 
@@ -90,19 +114,19 @@ def auto():
         # auto()
         pass
 
+
 def closing_window():
     sg.theme('BlueMono')
     layout1 = [
         [sg.Text('          Task Completed Successfully !!!!')],
-        [sg.Button("Continue",size=(15,1)),sg.Button("Exit",size=(15,1))],
-
+        [sg.Button("Continue", size=(15, 1)), sg.Button("Exit", size=(15, 1))],
 
     ]
 
     window1 = sg.Window('Web Scraper', layout1)
     while True:
         event1, values1 = window1.read()
-        if event1 == "Exit":                    # activating the buttons and breaking the loop
+        if event1 == "Exit":  # activating the buttons and breaking the loop
             break
 
         if event1 == sg.WIN_CLOSED:
@@ -110,21 +134,17 @@ def closing_window():
 
         if event1 == "Continue":
             while True:
-                j = 0                            # breaking two loops
+                j = 0  # breaking two loops
                 auto()
                 closing_window()
                 if j == 0:
                     break
             break
 
-
     window1.close()
 
 
-
-
 def links():
-
     page = requests.get(url)
     data = page.text
 
@@ -141,23 +161,20 @@ def links():
     text_file.close()
     # print(links)
 
-def text_data():
 
+def text_data():
     # Make a request
     page = requests.get(url)
     soup = BeautifulSoup(page.content, 'html.parser')
 
-
-
     text_file = open(str(true_path) + '\\text_data.txt', 'w')
 
     # Set all_h1_tags to all h1 tags of the soup
-    tags = ['p','a','li','ul','td','tr','table','ol','h1','h2','h3','h4','h5','h6']
+    tags = ['p', 'a', 'li', 'ul', 'td', 'tr', 'table', 'ol', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6']
     for i in tags:
 
         for element in soup.select(i):
-                                                                                             
-            txt = element.text + "\n"                                                          
+            txt = element.text + "\n"
             print(element.text)
             text_file.write(txt)
 
@@ -168,7 +185,7 @@ def img_data():
     # CREATE FOLDER
     def folder_create(images):
         try:
-            folder_name = str(true_path)+"//"+'image data'
+            folder_name = str(true_path) + "//" + 'image data'
             # folder creation
             os.mkdir(folder_name)
 
@@ -268,8 +285,6 @@ def img_data():
         # Call folder create function
         folder_create(images)
 
-
-
     # CALL MAIN FUNCTION
     main(url)
 
@@ -299,13 +314,14 @@ def cssjs():
             cs_files.append(web_url + url2)
 
     # adding links to the txt files
-    with open(true_path+"\\javascript_files.txt", "w") as f:
+    with open(true_path + "\\javascript_files.txt", "w") as f:
         for js_file in js_files:
             print(js_file, file=f)
 
-    with open(true_path+"\\css_files.txt", "w") as f:
+    with open(true_path + "\\css_files.txt", "w") as f:
         for css_file in cs_files:
             print(css_file, file=f)
+
 
 def dnsinfo():
     domain = whois.whois(url)
@@ -317,18 +333,17 @@ def dnsinfo():
     text_file = open(str(true_path) + '\\dns_info.txt', 'w')
     for x in a:
         print(x + "                " + str(c[x]))
-        inf = x + "                " + str(c[x]) +"\n"
+        inf = x + "                " + str(c[x]) + "\n"
         text_file.write(inf)
     text_file.close()
 
 
-
 while True:
     try:
-        i = 0                                               # looping the main
+        i = 0  # looping the main
         auto()
         closing_window()
-        if i ==0:
+        if i == 0:
             break
 
     except:
