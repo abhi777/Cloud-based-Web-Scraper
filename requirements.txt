@@ -2,3 +2,6 @@ PySimpleGUI
 requests
 bs4
 whois
+tempfile
+pandas
+google-cloud-storage
