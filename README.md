@@ -8,7 +8,7 @@ Executing the script after providing the inputs would start saving the required 
 ![11](https://user-images.githubusercontent.com/74459400/197361183-6cf81a5d-07e3-41ff-946b-d7c4b669b27b.png)
 
 
-# Requirements
+## Requirements
 
 * Windows OS             
 * Python  (v3.6 or above)             
@@ -20,7 +20,7 @@ Executing the script after providing the inputs would start saving the required 
 
 
 
-# Usage    
+## Usage    
 
 1. Download the Repository using the command given below from the terminal or by downloading the archive from above.      
 ```$ git clone https://github.com/abhi750/GUI-based-Web-Scraper.git```
@@ -36,7 +36,7 @@ Executing the script after providing the inputs would start saving the required 
 6. Provide inputs to the script and execute it.
 
 
-#Working 
+## Working 
 On executing the script, the marked data would be scraped from the specified webpages and would be stored in the GCS Bucket of the user.
 
 ![3](https://user-images.githubusercontent.com/74459400/197361414-78a14542-5823-41b7-8000-5b22c8548408.png)
@@ -47,9 +47,9 @@ On executing the script, the marked data would be scraped from the specified web
 
 
 
-# Updates
+## Updates
 
-1. A Progress Bar to show the current status of the application.
+1. A Progress Bar to show the current status of the task.
 2. Improved Performance and Bug fixes.
 3. Cloud Storage 
 
