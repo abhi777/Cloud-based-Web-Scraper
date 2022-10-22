@@ -5,13 +5,13 @@ This is a Web Scraping Tool developed using Python to scrap Data from the web an
 It needs a text file as an input containing a list of links of webpages line by line and a Destination Folder to save data and the types of Data to be scraped.
 Executing the script after providing the inputs would start saving the required data into the Destination Folder.
 
-# Requirements
+## Requirements
 
-Windows OS             
-Python                   
-requirements.txt
+* Windows OS             
+* Python                   
+* requirements.txt
 
-# Usage    
+## Usage    
 
 1. Download the Repository using the command given below from the terminal or by downloading the archive from above.      
 ```$ git clone https://github.com/abhi750/GUI-based-Web-Scraper.git```
@@ -21,12 +21,12 @@ requirements.txt
 ```$ python Web Scraper (GUI).py```
 4. Provide inputs to the script and execute it.
 
-# Updates
+## Updates
 
 1. A Progress Bar to show the current status of the application.
 2. Improved Performance and Bug fixes.
                                                     
-# Screenshots
+## Screenshots
 
 ![1](https://user-images.githubusercontent.com/74459400/185405055-bb0f6777-e53c-418b-aea0-1ec08b5405aa.png)
 
@@ -43,7 +43,7 @@ requirements.txt
 
 
 
-# Working               
+## Working               
 
 https://user-images.githubusercontent.com/74459400/185376584-2f4ad277-85ac-42ee-a009-c3acbd99f2da.mp4
 
