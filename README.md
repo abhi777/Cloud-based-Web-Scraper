@@ -1,58 +1,30 @@
-# GUI based Web Scraper v1.0.7
+# Scrapify v1.0.10
 
-This is a Web Scraping Tool developed using Python which can scrap Data from the web and save the extracted Data in Google Cloud Storage. It's also very convenient to use, even for a Non-Technical Person as it provides a GUI. 
+This is a Web Application developed using Python which can scrap Data from the web and save the extracted Data in Google Cloud Storage. It's also very convenient to use, even for a Non-Technical Person as it provides a really nice UI. 
 
-It needs a text file as an input containing a list of links of webpages line by line, name of the GCS Bucket and the types of Data to be scraped.
+To check out the live version of my project, [Click Here...](https://abhi777-scrapify-scrapify-dftcnr.streamlitapp.com/)
+
+![1](https://user-images.githubusercontent.com/74459400/199218271-f16c00fb-d93c-4388-afe2-80c8b5baf6f8.jpg)
+
+First, We need to signup by clicking on the Sign Up section present in the side bar and Login using the newly created credentials.
+
+![2](https://user-images.githubusercontent.com/74459400/199219062-be6152d4-0587-4fd5-a4e8-dd2269391720.jpg)
+
+It needs various inputs like:
+* Name of the GCS Bucket
+* A text file containing a list of links of webpages line by line
+* A json file containing the credentials of the GCS(Google Cloud Storage)
+* Types of Data to be scraped
+
+![3](https://user-images.githubusercontent.com/74459400/199219202-16ec914e-e9fe-472f-8369-d99266da580f.jpg)
+
 Executing the script after providing the inputs would start saving the required data into the GCS Bucket.        
 
-![11](https://user-images.githubusercontent.com/74459400/197361183-6cf81a5d-07e3-41ff-946b-d7c4b669b27b.png)
+![4](https://user-images.githubusercontent.com/74459400/199219835-93bca235-adc4-4087-88ef-f25cbc565f90.jpg)
 
+![5](https://user-images.githubusercontent.com/74459400/199220136-4ffe1eba-10b9-405d-898b-67ce5821cecb.jpg)
 
-## Requirements
-
-* Windows OS             
-* Python  (v3.6 or above)             
-* webpage_links.txt (a text file containg links of webpages)
-* requirements.txt
-* key.json (credentials of GCS Bucket)
-
-![2](https://user-images.githubusercontent.com/74459400/197361214-987e48c2-5401-4b6d-9f78-331649c5e6b4.png)
-
-
-
-## Usage    
-
-1. Download the Repository using the command given below from the terminal or by downloading the archive from above.      
-```$ git clone https://github.com/abhi750/GUI-based-Web-Scraper.git```
-2. Install modules in requirements.txt by executing the command given below in cmd or in the terminal of your Code Editor.                          
- ```$ pip install -r requirements.txt```
-3. A Google Cloud Account must be created before executing the script and the credentials of the GCS Bucket must be kept in the same directory.
-
-![4](https://user-images.githubusercontent.com/74459400/197361328-2601c0e8-40f1-4539-9ed7-5398a232fbd9.png)
-
-
-5. Run the Python Script using terminal or cmd.                         
-```$ python Web Scraper (GUI).py```
-6. Provide inputs to the script and execute it.
-
-
-## Working 
-On executing the script, the marked data would be scraped from the specified webpages and would be stored in the GCS Bucket of the user.
-
-![3](https://user-images.githubusercontent.com/74459400/197361414-78a14542-5823-41b7-8000-5b22c8548408.png)
-![5](https://user-images.githubusercontent.com/74459400/197361424-2cee8ea0-2a80-42f1-9c8e-d98b5d059ebe.png)
-![6](https://user-images.githubusercontent.com/74459400/197361433-c8d386ba-b21b-40a2-b88e-51cdbfa49424.png)
-![7](https://user-images.githubusercontent.com/74459400/197361435-327bd55d-8d9c-42dc-915a-602b29777728.png)
-
-
-
-
-## Updates
-
-1. A Progress Bar to show the current status of the task.
-2. Improved Performance and Bug fixes.
-3. Cloud Storage 
-
+![6](https://user-images.githubusercontent.com/74459400/199220198-f804d363-4d2b-49de-aa54-333f5243e796.jpg)
 
 
                       
