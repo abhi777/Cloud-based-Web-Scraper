@@ -29,8 +29,8 @@ Executing the script after providing the inputs would start saving the required 
 
 ![image](https://user-images.githubusercontent.com/74459400/228039553-6a94a001-d149-4b33-b8c2-f652b279dc6f.png)
 
+![image](https://user-images.githubusercontent.com/74459400/228039772-037e4a12-14bc-4add-9057-b2632e6e7ad6.png)
 
-![6](https://user-images.githubusercontent.com/74459400/199220198-f804d363-4d2b-49de-aa54-333f5243e796.jpg)
 
 
                       
