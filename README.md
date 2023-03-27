@@ -4,7 +4,8 @@ This is a Web Application developed using Python which can scrap Data from the w
 
 ## To check out the live version of my project, [Click Here...](https://abhi777-scrapify-scrapify-405j5r.streamlit.app/)
 
-![1](https://user-images.githubusercontent.com/74459400/199218271-f16c00fb-d93c-4388-afe2-80c8b5baf6f8.jpg)
+![image](https://user-images.githubusercontent.com/74459400/228037804-3ecbae64-4b28-4426-8553-605c4289ab49.png)
+
 
 First, We need to signup by clicking on the Sign Up section present in the side bar and Login using the newly created credentials.
 
