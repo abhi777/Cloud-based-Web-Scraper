@@ -11,7 +11,7 @@ First, We need to signup by clicking on the Sign Up section present in the side 
 
 ![image](https://user-images.githubusercontent.com/74459400/228038014-1eb0a80f-56a8-484e-84ca-590233e69c7d.png)
 ![image](https://user-images.githubusercontent.com/74459400/228038226-d58af762-99c0-415a-8a14-592ab748cc4e.png)
-![image](https://user-images.githubusercontent.com/74459400/228038333-2210fbbb-362a-4997-9dfc-6975762c2278.png)
+
 
 
 It needs various inputs like:
@@ -20,11 +20,12 @@ It needs various inputs like:
 * A json file containing the credentials of the GCS(Google Cloud Storage)
 * Types of Data to be scraped
 
-![3](https://user-images.githubusercontent.com/74459400/199219202-16ec914e-e9fe-472f-8369-d99266da580f.jpg)
+
 
 Executing the script after providing the inputs would start saving the required data into the GCS Bucket.        
 
-![4](https://user-images.githubusercontent.com/74459400/199219835-93bca235-adc4-4087-88ef-f25cbc565f90.jpg)
+![image](https://user-images.githubusercontent.com/74459400/228039201-0635f308-35e3-40f3-ab28-dcb349bcbf4d.png)
+
 
 ![5](https://user-images.githubusercontent.com/74459400/199220136-4ffe1eba-10b9-405d-898b-67ce5821cecb.jpg)
 
