@@ -9,7 +9,10 @@ This is a Web Application developed using Python which can scrap Data from the w
 
 First, We need to signup by clicking on the Sign Up section present in the side bar and Login using the newly created credentials.
 
-![2](https://user-images.githubusercontent.com/74459400/199219062-be6152d4-0587-4fd5-a4e8-dd2269391720.jpg)
+![image](https://user-images.githubusercontent.com/74459400/228038014-1eb0a80f-56a8-484e-84ca-590233e69c7d.png)
+![image](https://user-images.githubusercontent.com/74459400/228038226-d58af762-99c0-415a-8a14-592ab748cc4e.png)
+![image](https://user-images.githubusercontent.com/74459400/228038333-2210fbbb-362a-4997-9dfc-6975762c2278.png)
+
 
 It needs various inputs like:
 * Name of the GCS Bucket
